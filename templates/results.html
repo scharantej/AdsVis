@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ad Campaign Details</title>
+</head>
+<body>
+<h1>Ad Campaign Details</h1>
+<table>
+<thead>
+<tr>
+<th>Campaign Name</th>
+<th>Start Date</th>
+<th>End Date</th>
+<th>Budget</th>
+</tr>
+</thead>
+<tbody>
+{% for campaign in campaigns %}
+<tr>
+<td>{{ campaign[0] }}</td>
+<td>{{ campaign[1] }}</td>
+<td>{{ campaign[2] }}</td>
+<td>{{ campaign[3] }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+<a href="/download">Download CSV</a>
+</body>
+</html>
+
